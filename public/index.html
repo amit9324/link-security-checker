@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Security Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card hero">
+      <div class="badge">URL SECURITY TOOL</div>
+      <h1>Link Security Checker</h1>
+      <p>Analyze a URL for common suspicious patterns before visiting it.</p>
+
+      <form id="checkForm">
+        <label for="url">Enter URL</label>
+        <div class="input-row">
+          <input id="url" type="text" placeholder="https://example.com" autocomplete="off" required>
+          <button type="submit">Check URL</button>
+        </div>
+      </form>
+      <p class="hint">Example: https://example.com</p>
+    </section>
+
+    <section id="result" class="card result hidden"></section>
+
+    <section class="card info">
+      <h2>What this tool checks</h2>
+      <div class="checks">
+        <span>✓ HTTPS</span>
+        <span>✓ IP-based URLs</span>
+        <span>✓ URL length</span>
+        <span>✓ Suspicious characters</span>
+        <span>✓ Punycode</span>
+        <span>✓ Suspicious keywords</span>
+        <span>✓ Subdomain structure</span>
+        <span>✓ Non-standard ports</span>
+      </div>
+      <p class="disclaimer">
+        This tool provides a heuristic risk assessment. It cannot guarantee that a website is safe.
+        Do not enter passwords, OTPs, payment details, or other sensitive information into a site
+        just because this checker reports a low risk.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
