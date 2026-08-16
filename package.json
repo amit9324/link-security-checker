@@ -1,0 +1,13 @@
+{
+  "name": "link-security-checker",
+  "version": "1.0.0",
+  "description": "A simple URL security checker using Node.js and Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
